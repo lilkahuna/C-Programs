@@ -6,7 +6,7 @@ char name[] = "Brodie";
 int* ptr = &name;
 
 // void basically means no return value
-void myFunction(){
+void myFunction(int age){
     // %p is a format specifyer for pointers
     printf("Memory address: %p", ptr);
 }
@@ -14,6 +14,6 @@ void myFunction(){
 int main(){
     // %s is a format specifyer
     printf("%s\n", name);
-    myFunction();
+    myFunction(10);
 }
 
